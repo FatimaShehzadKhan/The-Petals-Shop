@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h3,
+.title {
+  font-size: 25pt;
+  color: #d33275;
+  font-family: "Dancing Script", cursive;
+}
+.visible-in-all-sizes {
+  font-size: 20pt;
+  color: #d33275;
+}
+.visible-in-all-sizes li i,
+.hidden-in-small-screen {
+  font-size: 15pt;
+}
+.hidden-in-small-screen,
+#explore {
+  color: #fff;
+  font-size: 15pt;
+  font-family: "Delicious Handrawn", cursive;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+#explore {
+  font-size: 15pt;
+  color: #fff;
+}
+#explore:hover {
+  color: black;
+}
+.fa-bars-staggered {
+  display: none;
+}
+nav ul {
+  font-family: "Dancing Script", cursive;
+  padding: 5vh 15vw 0 15vw;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.hero {
+  background-image: url("./assets/desktop-wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.links-on-hero-section {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 10vw 10vh 10vw;
+}
+.links-on-hero-section #whatsapp {
+  margin: 0 60vw 0 0;
+}
+
+#whatsapp i {
+  font-size: 30pt;
+  color: rgb(79, 248, 79);
+}
+#explore::after,
+.collection-content div button::after,
+.items-content div button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #683048;
+  transition: width 0.3s ease;
+}
+
+#explore:hover::after,
+.collection-content div button:hover::after,
+.items-content div button:hover::after {
+  width: 100%;
+}
+.story {
+  margin: 0 10vw;
+  font-size: 14pt;
+}
+.bouquet {
+  height: 100vh;
+  background-image: url("./assets/bouquet-section-bg.jpg");
+  background-size: cover;
+}
+.story-content,
+.bouquet-content,
+.collection-content,
+.items-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #683048;
+  font-size: 13pt;
+}
+.story-content,
+.bouquet-content {
+  padding: 15vh 5vw 10vh;
+}
+.collection-content {
+  padding: 9vh 5vw;
+}
+.bouquet-content {
+  display: none; /* Initially hide the content */
+  position: absolute;
+  right: 0;
+  width: 40vw;
+  background-color: antiquewhite;
+  text-align: left;
+  height: 70vh;
+}
+
+.bouquet:hover .bouquet-content {
+  display: block; /* Display content on hover */
+  transition: width 0.6s ease-in-out;
+}
+.bouquet-content p {
+  margin-top: 5vh;
+}
+.bouquet-content button {
+  background-color: white;
+  color: #d33275;
+  border: 1px solid #d33275;
+  padding: 0.5rem 0.5rem;
+  margin-top: 5vh;
+  width: 20vw;
+}
+.bouquet-content button:hover {
+  background-color: #d33275;
+  color: white;
+  border: 1px solid #d33275;
+}
+
+.collection h3 {
+  text-align: center;
+  margin: 10vh 0 0 0;
+}
+.collection-content,
+.items-content {
+  flex-direction: row;
+  justify-content: space-around;
+}
+.collection-content div,
+.items-content div {
+  height: 55vh;
+  width: 28vw;
+  margin: 0 1vw;
+}
+.collection1 {
+  background-image: url("https://i.pinimg.com/564x/87/06/88/87068863acbf4c0434bdff5fc8e1d8f0.jpg");
+}
+.collection2 {
+  background-image: url("https://i.pinimg.com/564x/22/7a/54/227a540a682e4e20016f5d7633d1eaf7.jpg");
+}
+.collection3 {
+  background-image: url("https://i.pinimg.com/564x/2e/e6/4a/2ee64a8d55943e13f14133885b9a25f1.jpg");
+}
+.collection-content div button,
+.items-content div button {
+  background-color: transparent;
+  border: none;
+  padding-top: 45vh;
+  font-size: 20pt;
+  color: white;
+  font-family: "Dancing Script", cursive;
+}
+.collection-content div button::after {
+  background-color: white;
+}
+.items-content div button::after {
+  background-color: #d33275;
+}
+
+.items-content div p {
+  font-family: cursive;
+  font-size: 12pt;
+}
+.item1 {
+  background-image: url("https://i.pinimg.com/564x/d9/f2/ed/d9f2ed14493755f0edeff18c7d9b5092.jpg");
+}
+.item2 {
+  background-image: url("https://i.pinimg.com/564x/9b/42/b7/9b42b71f7797b46b06ed212944b1d178.jpg");
+}
+.item3 {
+  background-image: url("https://i.pinimg.com/564x/a7/fe/2f/a7fe2f6c790f326eb4937986de44ccf7.jpg");
+}
+.item4 {
+  background-image: url("./assets/item4.jpg");
+}
+.item5 {
+  background-image: url("https://i.pinimg.com/564x/96/dc/d2/96dcd2cca6436b46bb0429e1e050b0e9.jpg");
+}
+.item6 {
+  background-image: url("https://i.pinimg.com/564x/0a/f3/3a/0af33ac0a0370d920a85d17eeac56ba7.jpg");
+}
+.items-content div,
+.collection-content div {
+  background-size: cover;
+}
+.items-content {
+  padding: 5vh 5vw 8vh 5vw !important;
+  font-size: 11pt;
+}
+.items-content div button {
+  padding-top: 0;
+  color: #d33275;
+  font-family: "Dancing Script", cursive;
+}
+.footer {
+  padding-top: 5vh;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+}
+#footer-bg {
+  background-color: #f1f1f1;
+}
+.footer div ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #683048;
+  font-size: 13pt;
+}
+.footer-line {
+  text-align: center;
+  padding: 20px 0;
+  color: #683048;
+  font-size: 13pt;
+}
+@media screen and (max-width: 575.98px) {
+  /* .navigation-bar {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+          
+            .visible-in-all-sizes {
+              display: none;
+            }
+          
+            .navigation-bar > div {
+              display: flex;
+              gap: 10px;
+            } */
+  .hidden-in-small-screen {
+    display: none;
+    transition: display 0.5s ease;
+  }
+  .show-ul {
+    display: block;
+    transition: display 0.5s ease;
+  }
+  .fa-bars-staggered {
+    display: flex;
+  }
+
+  .responsive-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .responsive-nav ul li {
+    margin-bottom: 10px;
+  }
+  .hidden-in-small-screen {
+    background-color: rgb(255, 255, 255);
+    justify-content: flex-start;
+  }
+  .hidden-in-small-screen li {
+    font-size: 13pt;
+    padding: 3vh 0;
+    color: #683048;
+  }
+
+  .collection-content {
+    flex-wrap: wrap;
+    padding: 1vh 0 10vh 0;
+  }
+  .collection-content div {
+    width: 60vw;
+    height: 60vh;
+    margin-top: 5vh;
+  }
+  .items-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+    padding: 5vh 5vw 3vh 5vw !important;
+  }
+
+  .items-content > div {
+    width: 60vw; /* Adjust the width and margin as needed */
+    margin: 7vh auto 5vh auto;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  .footer {
+    margin: 13vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer div {
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .hidden-in-small-screen {
+    display: none;
+    transition: display 0.5s ease;
+  }
+  .show-ul {
+    display: block;
+    transition: display 0.5s ease;
+  }
+  .fa-bars-staggered {
+    display: flex;
+  }
+
+  .responsive-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .responsive-nav ul li {
+    margin-bottom: 10px;
+  }
+  .hidden-in-small-screen {
+    background-color: rgb(255, 255, 255);
+    justify-content: flex-start;
+  }
+  .hidden-in-small-screen li {
+    font-size: 13pt;
+    padding: 3vh 0;
+    color: #683048;
+  }
+
+  .collection-content {
+    flex-wrap: wrap;
+    padding: 3vh 0 10vh 0;
+  }
+  .collection-content div {
+    width: 60vw;
+    height: 60vh;
+    margin-top: 5vh;
+  }
+  .items-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5vh 5vw 4vh 5vw !important;
+  }
+
+  .items-content > div {
+    width: calc(50% - 20px); /* Adjust the width and margin as needed */
+    margin: 22vh auto 4vh auto; /* Adjust as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer div {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  ul.hidden-in-small-screen {
+    color: white !important;
+  }
+}
